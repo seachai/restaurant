@@ -1,0 +1,52 @@
+#topHero {
+    background: black;
+    height: 500px;
+    position: relative;
+    background: linear-gradient(135deg,rgba(0,0,0,.2) 0,#000 100%);
+    background-image: linear-gradient(135deg,rgba(0,0,0,.2) 0,#000 100%),url("https://www.petrossian.com/wpblog/wp-content/uploads/2018/09/Salmon-poke-bowl-recipes.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .title {
+        padding: 200px 0 80px;
+        text-align: right;
+        h5 {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 300;
+        }
+        h1 {
+            font-family: $displayFont;
+            text-transform: capitalize;
+            color: #fff;
+            font-size: 4rem;
+            font-weight: 300;
+            margin: 0;
+        }
+    }
+}
+
+.contact-info {
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+    text-align: right;
+    color: #fff;
+    font-size: .8rem;
+    line-height: 1.5rem;
+
+    .booking {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .hours {
+        strong {
+            font-weight: bold;
+        }
+    }   
+}

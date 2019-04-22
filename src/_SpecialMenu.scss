@@ -1,0 +1,45 @@
+#specialMenu {
+    padding: 100px 0;
+    background: #fafafa;
+    // background: linear-gradient(135deg,rgba(0,0,0,.2) 0,#000 100%);
+    // background-image: url("https://st2.depositphotos.com/5580114/11549/i/950/depositphotos_115496016-stock-photo-grunge-background-light-grey-texture.jpg");
+    background-position: center;
+    // background-size: cover;
+    background-repeat: repeat;
+
+    h2,
+    h5 {
+        text-align: center;
+    }
+
+    .box {
+        background: #fff;
+        padding: 20px;
+
+        .price-circle {
+            font-family: $displayFont;
+            font-size: 2rem;
+            background: red;
+            border: 10px solid rgba(255,255,255, .7);
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: .9rem;
+            text-align: center;
+        }
+
+        .details {
+            font-weight: 300;
+            font-size: .8rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+}
