@@ -3,6 +3,7 @@ import Header from './Header';
 import TopHero from './TopHero';
 import OurStory from './OurStory';
 import SpecialMenu from './SpecialMenu';
+import RandomQuote from './RandomQuote';
 import './App.scss';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <TopHero />
         <OurStory />
         <SpecialMenu />
+        <RandomQuote />
       </div>
     );
   }

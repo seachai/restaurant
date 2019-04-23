@@ -1,11 +1,5 @@
 #specialMenu {
     padding: 100px 0;
-    background: #fafafa;
-    // background: linear-gradient(135deg,rgba(0,0,0,.2) 0,#000 100%);
-    // background-image: url("https://st2.depositphotos.com/5580114/11549/i/950/depositphotos_115496016-stock-photo-grunge-background-light-grey-texture.jpg");
-    background-position: center;
-    // background-size: cover;
-    background-repeat: repeat;
 
     h2,
     h5 {
@@ -16,20 +10,31 @@
         background: #fff;
         padding: 20px;
 
+        .box-img {
+            width: 100%;
+            height: 350px;
+            // background: linear-gradient(135deg,rgba(0,0,0,.2) 0,#000 100%);
+            background-image: url("https://eatpokebros.com/wp-content/uploads/2019/02/signature-bowl-the-duke.jpg");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
         .price-circle {
+            box-sizing: border-box;
+            margin: 0 auto;
             font-family: $displayFont;
-            font-size: 2rem;
-            background: red;
-            border: 10px solid rgba(255,255,255, .7);
+            font-size: 2.5rem;
             height: 100px;
             width: 100px;
-            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
         .title {
+            display: block;
             font-weight: 600;
             font-size: .9rem;
             text-align: center;
@@ -39,7 +44,20 @@
             font-weight: 300;
             font-size: .8rem;
             text-align: center;
-            line-height: 1.5;
+            line-height: 2;
+            margin: 0;
         }
+    }
+
+    .boxes {
+        padding-bottom: 50px;
+    }
+
+    a.link {
+        font-family: $displayFont;
+        color: #000;
+        text-decoration: none;
+        display: block;
+        text-align: center;
     }
 }
