@@ -5,7 +5,8 @@ class RandomQuote extends Component {
     return (
         <section id="randomQuote">
             <div className="container">
-                Sup bro
+                <h1>"For me, cooking is an extension of love."</h1>
+                <span className="author">- Hedda Sterne -</span>
             </div>
         </section>
     );
