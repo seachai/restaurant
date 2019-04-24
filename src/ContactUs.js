@@ -12,7 +12,8 @@ class ContactUs extends Component {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="title">
-                        Los Angeles, <span>California</span>
+                        {this.props.companyInfo.location}
+                        {/* Los Angeles, <span>California</span> */}
                       </div>
 
                       <h6 className="address">
@@ -30,7 +31,7 @@ class ContactUs extends Component {
                         Phone:
                       </h6>
                       <div className="title">
-                      (777) 777 - 7777
+                        {this.props.companyInfo.phone}
                     </div>
                       <h6>
                         Lunch Service:

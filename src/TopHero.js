@@ -10,13 +10,13 @@ class TopHero extends Component {
                         Welcome
                     </h5>
                     <h1>
-                        Poké Poké
+                        {this.props.companyInfo.title}
                     </h1>
                 </div>
                 <div className="contact-info">
                     <div className="container">
                         <div className="booking">Book Table Directly</div>
-                        <h2>(777) 777 - 7777</h2>
+                        <h2>{this.props.companyInfo.phone}</h2>
                         <div className="hours">
                             Opening Hours <strong>Mon - Fri:</strong> 9AM - 9PM /
                             <strong> Sat - Sun:</strong> 9AM - 9PM

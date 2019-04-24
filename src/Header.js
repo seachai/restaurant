@@ -9,11 +9,10 @@ class Header extends Component {
                 Logo
                 </div>
                 <nav>
-                    <a href="#app">Menu</a>
-                    <a href="#app">Party Platters</a>
-                    <a href="#app">Locations</a>
-                    <a href="#app">Rewards</a>
-                    <a href="#app">Order Online</a>
+                  <a href="#ourStory">Our Story</a>
+                  <a href="#Reviews">Reviews</a>
+                  <a href="#specialMenu">Special Menu</a>
+                  <a href="#header">Reservations</a>
                 </nav>
             </div>
         </header>

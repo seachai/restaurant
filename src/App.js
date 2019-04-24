@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import globalState from './globalState';
 import Header from './Header';
 import TopHero from './TopHero';
 import OurStory from './OurStory';
@@ -8,25 +7,37 @@ import SpecialMenu from './SpecialMenu';
 import RandomQuote from './RandomQuote';
 import Reviews from './Reviews';
 import ContactUs from './ContactUs';
+import Footer from './Footer';
 import './App.scss';
-
-// library.add(
-//   faArrowLeft,
-//   faArrowRight
-//   )
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+      this.state = {
+        globalState
+      }
+
+      console.log(this.state);
+    }
+
   render() {
     return (
       <div className="App">
         <Header />
-        <TopHero />
+        <TopHero 
+          companyInfo={this.state.globalState.companyInfo}
+        />
         <OurStory />
-        <SpecialMenu />
+        <SpecialMenu 
+          companyInfo={this.state.globalState.specialMenu}
+        />
         <RandomQuote />
         <Reviews />
-        <ContactUs />
+        <ContactUs 
+          companyInfo={this.state.globalState.companyInfo}
+        />
+        <Footer />
       </div>
     );
   }
