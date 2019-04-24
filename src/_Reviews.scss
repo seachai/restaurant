@@ -1,12 +1,13 @@
 #Reviews {
+    padding: 100px 0;
 
     .side-img {
         position: relative;
+        text-align: left;
 
         img {
-            position: absolute;
-            // max-width: 600px;
             width: 100%;
+            max-width: 600px;
         }
     }
 
@@ -15,7 +16,7 @@
     }
 
     .title {
-        margin: 50px 0 25px 0;
+        margin: 0 0 25px 0;
         font-weight: 700;
         letter-spacing: 10px;
     }
@@ -23,11 +24,11 @@
     h4 {
         font-weight: 600;
         font-size: .9rem;
-        margin-bottom: 25px;
+        margin-bottom: 2rem;
     }
 
     .author {
-        margin-bottom: 100px;
+        margin-bottom: 75px;
         color: $paragraphColor;
         font-size: .89rem;
         font-weight: 300;
@@ -35,6 +36,21 @@
 
         strong {
             font-weight: 700;
+            color: $black;
+        }
+    }
+
+    .arrows {
+
+        .faArrowLeft, 
+        .faArrowRight {
+            font-size: 2rem;
+            padding: 6px;
+            color: $paragraphColor;
+            cursor: pointer;
+        }
+        .faArrowLeft.ready, 
+        .faArrowRight.ready {
             color: $black;
         }
     }

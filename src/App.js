@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Header from './Header';
 import TopHero from './TopHero';
 import OurStory from './OurStory';
@@ -10,7 +10,10 @@ import Reviews from './Reviews';
 import ContactUs from './ContactUs';
 import './App.scss';
 
-library.add(faArrowLeft)
+// library.add(
+//   faArrowLeft,
+//   faArrowRight
+//   )
 
 
 class App extends Component {

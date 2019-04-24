@@ -8,7 +8,7 @@ class Reviews extends Component {
         <section id="Reviews">
             <div className="container">
               <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-8 side-img">
                   <div className="side-img">
                     <img src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/85/121/skd181312sdc.jpg" alt="chef"/>
                   </div>
@@ -21,8 +21,8 @@ class Reviews extends Component {
                   <p>Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.</p>
                   <div className="author"><strong>Joe Bastiachi</strong> - <em>winner of the chef masters</em></div>
                   <div className="arrows">
-                    <FontAwesomeIcon icon={faArrowLeft} />
-                    <FontAwesomeIcon icon={faArrowRight} />  
+                    <FontAwesomeIcon icon={faArrowLeft} className="faArrowLeft"/>
+                    <FontAwesomeIcon icon={faArrowRight} className="faArrowRight ready"/>  
                   </div>
                 </div>
               </div>
