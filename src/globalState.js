@@ -22,10 +22,50 @@ const specialMenu = [
     }
 ]
 
+const reviews = [
+    {
+        company: 'The Food Network',
+        author: 'Joe Bastiachi',
+        authorInfo: 'Winner Of The Chef Masters',
+        highlight: 'Best Poke Restaurant in Los Angeles!',
+        review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+    },
+    {
+        company: 'Gordon Ramsay\'s Best Kitchen Dream',
+        author: 'Gordon Ramsay',
+        authorInfo: 'Michelin Star Chef',
+        highlight: 'Best Poke Restaurant in Los Angeles!',
+        review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+    },
+    {
+        company: 'Chopped',
+        author: 'Anne Casella',
+        authorInfo: 'Winner Of Chopped',
+        highlight: 'Best Poke Restaurant in Los Angeles!',
+        review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+    },
+    {
+        company: 'Iron Chef America',
+        author: 'Rokusaburo Tsai',
+        authorInfo: 'Winner Of The Iron Chef America',
+        highlight: 'Best Poke Restaurant in Los Angeles!',
+        review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+    },
+    {
+        company: 'Chef\'s Table',
+        author: 'Joe Bastiachi',
+        authorInfo: 'Winner Of The Chef\'s Table',
+        highlight: 'Best Poke Restaurant in Los Angeles!',
+        review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+    },
+
+]
+
 export const globalState = {
     count: 0,
     companyInfo,
-    specialMenu
+    specialMenu,
+    reviews
 }
 
 export default globalState; 

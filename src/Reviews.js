@@ -3,6 +3,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 class Reviews extends Component {
+
+  loopedReviews = function() {
+    return this.props.reviews.map((item, index) => {;
+        return (
+        <div className="col-md-4" key={index}>
+          <h5 className="title">REVIEW</h5>
+          <h2>{item.company}</h2>
+          <h4>{item.highlight}</h4>
+          <p>{item.review}</p>
+          <div className="author"><strong>{item.author}</strong> - <em>{item.authorInfo}</em></div>
+          <div className="arrows">
+            <FontAwesomeIcon icon={faArrowLeft} className="faArrowLeft"/>
+            <FontAwesomeIcon icon={faArrowRight} className="faArrowRight ready"/>  
+          </div>
+        </div>
+        )
+    })
+  }
   render() {
     return (
         <section id="Reviews">
@@ -13,18 +31,7 @@ class Reviews extends Component {
                     <img src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/85/121/skd181312sdc.jpg" alt="chef"/>
                   </div>
                 </div>
-
-                <div className="col-md-4">
-                  <h5 className="title">REVIEW</h5>
-                  <h2>The Food Network</h2>
-                  <h4>"Best Poke Restaurant in Los Angeles!"</h4>
-                  <p>Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.</p>
-                  <div className="author"><strong>Joe Bastiachi</strong> - <em>winner of the chef masters</em></div>
-                  <div className="arrows">
-                    <FontAwesomeIcon icon={faArrowLeft} className="faArrowLeft"/>
-                    <FontAwesomeIcon icon={faArrowRight} className="faArrowRight ready"/>  
-                  </div>
-                </div>
+                {this.loopedReviews()}
               </div>
             </div>
         </section>

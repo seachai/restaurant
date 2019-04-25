@@ -30,10 +30,12 @@ class App extends Component {
         />
         <OurStory />
         <SpecialMenu 
-          companyInfo={this.state.globalState.specialMenu}
+          specialMenu={this.state.globalState.specialMenu}
         />
         <RandomQuote />
-        <Reviews />
+        <Reviews
+          reviews={this.state.globalState.reviews}  
+        />
         <ContactUs 
           companyInfo={this.state.globalState.companyInfo}
         />
