@@ -34,7 +34,7 @@ class App extends Component {
         />
         <RandomQuote />
         <Reviews
-          reviews={this.state.globalState.reviews}  
+          reviews={this.state.globalState}  
         />
         <ContactUs 
           companyInfo={this.state.globalState.companyInfo}

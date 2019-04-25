@@ -57,15 +57,17 @@ const reviews = [
         authorInfo: 'Winner Of The Chef\'s Table',
         highlight: 'Best Poke Restaurant in Los Angeles!',
         review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
-    },
-
+    }
 ]
 
-export const globalState = {
+const globalState = {
     count: 0,
     companyInfo,
     specialMenu,
-    reviews
+    reviews,
+    reviewStatus: {
+        currentReview: 0,
+    },
 }
 
 export default globalState; 
