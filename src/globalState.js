@@ -65,9 +65,7 @@ const globalState = {
     companyInfo,
     specialMenu,
     reviews,
-    reviewStatus: {
-        currentReview: 0,
-    },
+    currentReview: 0
 }
 
 export default globalState; 

@@ -7,18 +7,20 @@ class Reviews extends Component {
   loopedReviews = function() {
     return (
       <div>
-        <h2>{this.props.reviews.reviews[this.props.reviews.reviewStatus.currentReview].company}</h2>
-        <h4>"{this.props.reviews.reviews[this.props.reviews.reviewStatus.currentReview].highlight}"</h4>
-        <p>{this.props.reviews.reviews[this.props.reviews.reviewStatus.currentReview].review}</p>
-        <div className="author"><strong>{this.props.reviews.reviews[this.props.reviews.reviewStatus.currentReview].author}</strong> - <em>{this.props.reviews.reviews[this.props.reviews.reviewStatus.currentReview].authorInfo}</em></div>
+        <h2>{this.props.reviews.reviews[this.props.reviews.currentReview].company}</h2>
+        <h4>"{this.props.reviews.reviews[this.props.reviews.currentReview].highlight}"</h4>
+        <p>{this.props.reviews.reviews[this.props.reviews.currentReview].review}</p>
+        <div className="author"><strong>{this.props.reviews.reviews[this.props.reviews.currentReview].author}</strong> - <em>{this.props.reviews.reviews[this.props.reviews.currentReview].authorInfo}</em></div>
       </div>
     )
   }
 
   onClick = () => {
-    this.setState({
-      reviewStatus: this.reviewStatus.currentReview + 1
-    })
+    console.log(this.props.reviews.currentReview);
+    console.log(this.props);
+    this.setState(
+      {currentReview: this.props.reviews.currentReview + 1}
+    )
   }
 
   
@@ -39,11 +41,11 @@ class Reviews extends Component {
                   <div className="arrows">
                   <FontAwesomeIcon icon={faArrowLeft} 
                     className={`faArrowLeft 
-                    ${(this.props.reviews.reviewStatus.currentReview > 0) ? 'ready' : ''}`}
+                    ${(this.props.reviews.currentReview > 0) ? 'ready' : ''}`}
                   />
-                  <FontAwesomeIcon icon={faArrowRight} onClick={onClick()}
+                  <FontAwesomeIcon icon={faArrowRight} onClick={this.onClick}
                     className={`faArrowRight 
-                    ${(this.props.reviews.reviewStatus.currentReview === (this.props.reviews.reviews.length - 1)) ? '' : 'ready'}`}
+                    ${(this.props.reviews.currentReview === (this.props.reviews.reviews.length - 1)) ? '' : 'ready'}`}
                   />  
                 </div>
                 </div>
