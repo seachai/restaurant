@@ -14,15 +14,6 @@ class Reviews extends Component {
       </div>
     )
   }
-
-  onClick = () => {
-    console.log(this.props.reviews.currentReview);
-    console.log(this.props);
-    this.setState(
-      {currentReview: this.props.reviews.currentReview + 1}
-    )
-  }
-
   
 
   render() {
@@ -39,11 +30,11 @@ class Reviews extends Component {
                   <h5 className="title">REVIEW</h5>
                   {this.loopedReviews()}
                   <div className="arrows">
-                  <FontAwesomeIcon icon={faArrowLeft} 
+                  <FontAwesomeIcon icon={faArrowLeft} onClick={this.minusOne}
                     className={`faArrowLeft 
                     ${(this.props.reviews.currentReview > 0) ? 'ready' : ''}`}
                   />
-                  <FontAwesomeIcon icon={faArrowRight} onClick={this.onClick}
+                  <FontAwesomeIcon icon={faArrowRight} onClick={this.plusOne}
                     className={`faArrowRight 
                     ${(this.props.reviews.currentReview === (this.props.reviews.reviews.length - 1)) ? '' : 'ready'}`}
                   />  

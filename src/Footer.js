@@ -14,14 +14,14 @@ class Footer extends Component {
                 </nav>
 
                 <ul className="social-media">
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://twitter.com/">Twitter</a></li>
-                <li><a href="https://www.google.com/">Google Plus</a></li>
-                <li><a href="https://www.youtube.com/">YouTube</a></li>
+                <li><a href="https://www.facebook.com/"><i className="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/"><i className="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com/"><i className="fab fa-google-plus-g"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i className="fab fa-youtube"></i></a></li>
                 </ul>
 
                 <div className="copyright">
-                    &copy; 2019 Copyright
+                    &copy; 2019 Chai Lee - Made with love
                 </div>
             </div>
         </footer>

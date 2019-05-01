@@ -17,10 +17,10 @@ class App extends Component {
       this.state = {
         globalState
       }
-
       console.log(this.state);
+      console.log(this.state.currentReview);
     }
-
+  
   render() {
     return (
       <div className="App">
@@ -35,6 +35,8 @@ class App extends Component {
         <RandomQuote />
         <Reviews
           reviews={this.state.globalState}  
+          increment={this.state.plusOne}
+          // decrement={this.minusOne}
         />
         <ContactUs 
           companyInfo={this.state.globalState.companyInfo}

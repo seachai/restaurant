@@ -65,7 +65,27 @@ const globalState = {
     companyInfo,
     specialMenu,
     reviews,
-    currentReview: 0
+    currentReview: 0,
+    plusOne: function() {
+        this.setState(
+            {currentReview: this.props.currentReview + 1}
+        )
+    }
+    
+    //   minusOne = () => {
+    //     console.log(this.props.reviews.currentReview);
+    //     return this.setState(
+    //       {currentReview: this.props.reviews.currentReview - 1}
+    //     )
+    //   }
 }
 
 export default globalState; 
+
+
+// minusOne = () => {
+//     console.log(this.props.reviews.currentReview);
+//     return this.setState(
+//       {currentReview: this.props.reviews.currentReview - 1}
+//     )
+//   }
