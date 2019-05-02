@@ -33,11 +33,7 @@ class App extends Component {
           specialMenu={this.state.globalState.specialMenu}
         />
         <RandomQuote />
-        <Reviews
-          reviews={this.state.globalState}  
-          increment={this.state.plusOne}
-          // decrement={this.minusOne}
-        />
+        <Reviews />
         <ContactUs 
           companyInfo={this.state.globalState.companyInfo}
         />

@@ -3,18 +3,72 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 class Reviews extends Component {
+  constructor(props) {
+    super(props);
+      this.state = {
+          currentReview: 0,
+          reviews: [
+            {
+                company: 'The Food Network',
+                author: 'Joe Bastiachi',
+                authorInfo: 'Winner Of The Chef Masters',
+                highlight: 'Best Poke Restaurant in Los Angeles!',
+                review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+            },
+            {
+                company: 'Gordon Ramsay\'s Best Kitchen Dream',
+                author: 'Gordon Ramsay',
+                authorInfo: 'Michelin Star Chef',
+                highlight: 'Best Poke Restaurant in Los Angeles!',
+                review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+            },
+            {
+                company: 'Chopped',
+                author: 'Anne Casella',
+                authorInfo: 'Winner Of Chopped',
+                highlight: 'Best Poke Restaurant in Los Angeles!',
+                review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+            },
+            {
+                company: 'Iron Chef America',
+                author: 'Rokusaburo Tsai',
+                authorInfo: 'Winner Of The Iron Chef America',
+                highlight: 'Best Poke Restaurant in Los Angeles!',
+                review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+            },
+            {
+                company: 'Chef\'s Table',
+                author: 'Joe Bastiachi',
+                authorInfo: 'Winner Of The Chef\'s Table',
+                highlight: 'Best Poke Restaurant in Los Angeles!',
+                review: 'Lorem ipsum dolor amet fanny pack la croix tumblr whatever chartreuse, lyft austin flannel godard plaid brooklyn viral poke. DIY viral shaman, humblebrag YOLO deep v 3 wolf moon twee kale chips bespoke ugh squid church-key.'
+            }
+          ]
+      }
+  }
 
   loopedReviews = function() {
     return (
       <div>
-        <h2>{this.props.reviews.reviews[this.props.reviews.currentReview].company}</h2>
-        <h4>"{this.props.reviews.reviews[this.props.reviews.currentReview].highlight}"</h4>
-        <p>{this.props.reviews.reviews[this.props.reviews.currentReview].review}</p>
-        <div className="author"><strong>{this.props.reviews.reviews[this.props.reviews.currentReview].author}</strong> - <em>{this.props.reviews.reviews[this.props.reviews.currentReview].authorInfo}</em></div>
+        <h2>{this.state.reviews[this.state.currentReview].company}</h2>
+        <h4>"{this.state.reviews[this.state.currentReview].highlight}"</h4>
+        <p>{this.state.reviews[this.state.currentReview].review}</p>
+        <div className="author"><strong>{this.state.reviews[this.state.currentReview].author}</strong> - <em>{this.state.reviews[this.state.currentReview].authorInfo}</em></div>
       </div>
     )
   }
+
+  plusOne = () => {
+    this.setState({
+      currentReview: this.state.currentReview + 1
+    })
+  }
   
+  minusOne = () => {
+    this.setState({
+      currentReview: this.state.currentReview - 1
+    })
+  }
 
   render() {
     return (
@@ -30,15 +84,15 @@ class Reviews extends Component {
                   <h5 className="title">REVIEW</h5>
                   {this.loopedReviews()}
                   <div className="arrows">
-                  <FontAwesomeIcon icon={faArrowLeft} onClick={this.minusOne}
-                    className={`faArrowLeft 
-                    ${(this.props.reviews.currentReview > 0) ? 'ready' : ''}`}
-                  />
-                  <FontAwesomeIcon icon={faArrowRight} onClick={this.plusOne}
-                    className={`faArrowRight 
-                    ${(this.props.reviews.currentReview === (this.props.reviews.reviews.length - 1)) ? '' : 'ready'}`}
-                  />  
-                </div>
+                    <FontAwesomeIcon icon={faArrowLeft} onClick={this.minusOne}
+                      className={`faArrowLeft 
+                      ${(this.state.currentReview > 0) ? 'ready' : ''}`}
+                    />
+                    <FontAwesomeIcon icon={faArrowRight} onClick={this.plusOne}
+                      className={`faArrowRight 
+                      ${(this.state.currentReview === (this.state.reviews.length - 1)) ? '' : 'ready'}`}
+                    />  
+                  </div>
                 </div>
               </div>
             </div>
