@@ -58,17 +58,25 @@ class Reviews extends Component {
     )
   }
 
-  plusOne = () => {
-    this.setState({
-      currentReview: this.state.currentReview + 1
-    })
+  reviewCarousel = () => {
+    if (this.state.currentReview <= 4) {
+      return this.setState({
+        currentReview: this.state.currentReview + 1
+      }, () => {
+        console.log(this.state.currentReview);
+      })
+    } else if (this.state.currentReview >= 0) {
+      this.setState({
+        currentReview: this.state.currentReview - 1
+      })
+    }
   }
   
-  minusOne = () => {
-    this.setState({
-      currentReview: this.state.currentReview - 1
-    })
-  }
+  // minusOne = () => {
+  //   this.setState({
+  //     currentReview: this.state.currentReview - 1
+  //   })
+  // }
 
   render() {
     return (
@@ -84,11 +92,11 @@ class Reviews extends Component {
                   <h5 className="title">REVIEW</h5>
                   {this.loopedReviews()}
                   <div className="arrows">
-                    <FontAwesomeIcon icon={faArrowLeft} onClick={this.minusOne}
+                    <FontAwesomeIcon icon={faArrowLeft} onClick={this.reviewCarousel}
                       className={`faArrowLeft 
                       ${(this.state.currentReview > 0) ? 'ready' : ''}`}
                     />
-                    <FontAwesomeIcon icon={faArrowRight} onClick={this.plusOne}
+                    <FontAwesomeIcon icon={faArrowRight} onClick={this.reviewCarousel}
                       className={`faArrowRight 
                       ${(this.state.currentReview === (this.state.reviews.length - 1)) ? '' : 'ready'}`}
                     />  
