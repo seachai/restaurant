@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class OrderModal extends Component {
-  render() {
+const OrderModal = ({ handleClose, show, children }) => {
+  const showHideClassName = show ? 'modal display-block' : 'modal display-none';
     return (
-        <div>Hello</div>
+        <div className={showHideClassName}>
+          <section className="modal-main">
+            {children}
+            <button onClick={handleClose}>Close</button>
+          </section>
+        </div>
     );
-  }
 }
 
 export default OrderModal;

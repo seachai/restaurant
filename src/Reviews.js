@@ -81,17 +81,17 @@ class Reviews extends Component {
   render() {
     return (
         <section id="Reviews">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-8 side-img">
-                  <div className="side-img">
-                    <img src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/85/121/skd181312sdc.jpg" alt="chef"/>
-                  </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 side-img">
+                <div className="side-img">
+                  <img src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/85/121/skd181312sdc.jpg" alt="chef"/>
                 </div>
-                <div className="col-md-4">
-                  <h5 className="title">REVIEW</h5>
-                  {this.loopedReviews()}
-                </div>
+              </div>
+              <div className="col-md-4">
+                <h5 className="title">REVIEW</h5>
+                {this.loopedReviews()}
+              </div>
                 <div className="arrows">
                 <FontAwesomeIcon icon={faArrowLeft} onClick={this.minusOne}
                   className={`faArrowLeft 
@@ -100,10 +100,10 @@ class Reviews extends Component {
                 <FontAwesomeIcon icon={faArrowRight} onClick={this.plusOne}
                   className={`faArrowRight 
                   ${(this.state.currentReview === (this.state.reviews.length - 1)) ? '' : 'ready'}`}
-                />  
-              </div>
+                />
               </div>
             </div>
+          </div>
         </section>
     );
   }

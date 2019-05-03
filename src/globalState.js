@@ -1,7 +1,11 @@
 const companyInfo = {
     title: 'Poké Poké',
     phone: '(777) 777 - 7777',
-    location: 'Los Angeles, California'
+    address: '888 Adams St.',
+    zipcode: '90066',
+    city: 'Los Angeles',
+    state: 'California',
+    email: 'info@pokepoke.com'
 }
 
 const specialMenu = [
@@ -17,7 +21,7 @@ const specialMenu = [
     },
     {  
         title: 'Bowl Numero Tres',
-        description: 'Marinated Tuna*, Sweet Onion, Seaweed Salad, Masago',
+        description: 'Marinated Tuna, Sweet Onion, Seaweed Salad, Masago',
         price: '$25'
     }
 ]

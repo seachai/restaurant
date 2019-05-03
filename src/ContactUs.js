@@ -12,17 +12,16 @@ class ContactUs extends Component {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="title">
-                        {this.props.companyInfo.location}
-                        {/* Los Angeles, <span>California</span> */}
+                        {this.props.companyInfo.city}, <span>{this.props.companyInfo.state}</span>
                       </div>
 
                       <h6 className="address">
-                        777 Lucky St. <br />
-                        Hollywood, CA 12405
+                        {this.props.companyInfo.address} <br />
+                        {this.props.companyInfo.city}, {this.props.companyInfo.state} {this.props.companyInfo.zipcode}
                       </h6>
 
                       <p>
-                      <strong>Email:</strong> <a href="mailto:info@pokepoke.com">info@pokepoke.com</a>
+                      <strong>Email:</strong> <a href="mailto:info@pokepoke.com">{this.props.companyInfo.email}</a>
                       </p>
 
                     </div>

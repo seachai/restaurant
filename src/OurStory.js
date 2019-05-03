@@ -5,18 +5,18 @@ class OurStory extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            show: false
+            modal: false
         };
     }
 
     showModal = () => {
-        console.log(this.state);
-        this.setState({ show: true });
+        console.log(this.state.modal);
+        this.setState({ modal: true });
     }
 
     hideModal = () => {
-        console.log(this.state);
-        this.setState({ show: false });
+        console.log(this.state.modal);
+        this.setState({ modal: false });
     }
 
     render() {
@@ -31,7 +31,11 @@ class OurStory extends Component {
                             <div className="quote">"The best Poke in town." - <strong>Chai Lee</strong></div>
                             <a href="#ourStory" className="order-btn" onClick={this.showModal}>Order</a>
                         </div>
-
+                        <OrderModal 
+                            className="modal"
+                            modalState={this.state.modal} 
+                            handleClose={this.hideModal}
+                        />
                         <div className="col-md-6">
                             <div className="salt-bae-img">
                             </div>
