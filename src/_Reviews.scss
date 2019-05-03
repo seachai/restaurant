@@ -1,5 +1,6 @@
 #Reviews {
     padding: 100px 0;
+    position: relative;
 
     .side-img {
         position: relative;
@@ -41,11 +42,15 @@
     }
 
     .arrows { 
+        position: absolute;
+        top: 550px;
+        right: 250px;
 
         .faArrowLeft, 
         .faArrowRight {
-            font-size: 2rem;
+            font-size: 3rem;
             padding: 6px;
+            margin: 100px;
             color: $paragraphColor;
             cursor: pointer;
         }

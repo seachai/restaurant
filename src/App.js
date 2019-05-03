@@ -18,7 +18,6 @@ class App extends Component {
         globalState
       }
       console.log(this.state);
-      console.log(this.state.currentReview);
     }
   
   render() {
