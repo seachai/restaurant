@@ -3,6 +3,7 @@ import globalState from './globalState';
 import Header from './Header';
 import TopHero from './TopHero';
 import OurStory from './OurStory';
+import OrderModal from './OrderModal';
 import SpecialMenu from './SpecialMenu';
 import RandomQuote from './RandomQuote';
 import Reviews from './Reviews';
