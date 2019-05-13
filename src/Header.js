@@ -12,7 +12,7 @@ class Header extends Component {
                   <a href="#ourStory">Our Story</a>
                   <a href="#Reviews">Reviews</a>
                   <a href="#specialMenu">Special Menu</a>
-                  <a href="#header">Reservations</a>
+                  <a href="#ourStory">Order Online</a>
                 </nav>
             </div>
         </header>

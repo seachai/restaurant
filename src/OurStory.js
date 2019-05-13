@@ -49,7 +49,7 @@ class OurStory extends Component {
                 className="order-btn"
                 onClick={this.toggleModal}
               >
-                Order
+                Order Online
               </a>
               <div />
               <div style={displayModal}>

@@ -8,8 +8,8 @@ class Footer extends Component {
                 <nav className="menu">
                     <a href="#ourStory">Our Story</a>
                     <a href="#Reviews">Reviews</a>
-                    <a href="#specialMenu">Special Menu</a>
-                    <a href="#header">Reservations</a>
+                    <a href="#specialMenu">Menu</a>
+                    <a href="#ourStory">Order Online</a>
                     <a href="#contactUs">Contact Us</a>
                 </nav>
 

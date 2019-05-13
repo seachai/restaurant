@@ -6,7 +6,7 @@ class SpecialMenu extends Component {
       return (
         <div className="col-md-4" key={index}>
           <div className="box">
-            <div className="box-img" />
+            <div className="box-img" style={{ backgroundImage: `url('${item.image}')`}}/>
             <div className="price-circle">{item.price}</div>
             <span className="title">{item.title}</span>
             <p className="details">{item.description}</p>

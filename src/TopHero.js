@@ -15,11 +15,11 @@ class TopHero extends Component {
                 </div>
                 <div className="contact-info">
                     <div className="container">
-                        <div className="booking">Book Table Directly</div>
+                        <div className="booking">Order Now</div>
                         <h2>{this.props.companyInfo.phone}</h2>
                         <div className="hours">
-                            Opening Hours <strong>Mon - Fri:</strong> 9AM - 9PM /
-                            <strong> Sat - Sun:</strong> 9AM - 9PM
+                            Opening Hours <strong>Mon - Fri:</strong> 10AM - 10PM /
+                            <strong> Sat - Sun:</strong> 10AM - 10PM
                         </div>
                     </div>
                 </div>
