@@ -9,17 +9,38 @@
   width: 800px;
   background-color: white;
   border: 1px solid #333;
+  border-radius: 5px;
   z-index: 9999;
+  display: flex;
 
-  .title {
-    font-size: 2rem;
-    text-align: center;
+  .left-modal {
+    background: white;
+    width: 50%;
+    padding: 10px 15px;
+    .title {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
   }
-  .fas {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 2.5rem;
-    cursor: pointer;
+
+  .right-modal {
+    background: linear-gradient(135deg,rgba(0,0,0,.2) 0,#000 100%);
+    background-image: url(./img/ingredients.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    .far {
+      padding: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: white;
+    }
   }
 }

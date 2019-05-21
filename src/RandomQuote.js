@@ -23,30 +23,28 @@ class RandomQuote extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   this.interval = setInterval(() => {
-  //     if (this.state.counter < this.state.quoteList.length) {
-  //       this.setState({
-  //         counter: this.state.counter + 1
-  //       });
-  //     } else {
-  //       this.setState({
-  //         counter: 0
-  //       });
-  //     } 
-  //   }, 10000);
-  // }
+  componentDidMount() {
+    this.interval = setInterval(() => 
+    this.randomNumber(),
+    5000
+    );
+  };
 
-  // componentWillUnmount() {
-  //   if (this.state.counter === this.state.quoteList.length) {
-  //     clearInterval(this.interval);
-  //   }
-  // }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  randomNumber = () => {
+    const numberGenerator = Math.floor(Math.random() * this.state.quoteList.length)
+    return this.setState({
+      counter: numberGenerator
+    })
+  }
 
   render() {
     return (
       <section id="randomQuote">
-        <div className="container">
+        <div className="container tracking-in-contract">
           <h1>"{this.state.quoteList[this.state.counter].quote}"</h1>
           <span className="author">
             - {this.state.quoteList[this.state.counter].author} -
