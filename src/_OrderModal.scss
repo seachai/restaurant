@@ -1,3 +1,14 @@
+.bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(#333, .7);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
 #orderModal {
   padding: 0;
   position: fixed;
@@ -9,8 +20,7 @@
   width: 800px;
   background-color: white;
   border: 1px solid #333;
-  border-radius: 5px;
-  z-index: 9999;
+  z-index: 1000;
   display: flex;
 
   .left-modal {
@@ -24,6 +34,25 @@
 
     p {
       font-size: 1.1rem;
+    }
+
+    .input-block {
+      .input-label {
+        font-size: 1.5rem;
+      }
+
+      #email {
+        margin: 25px 0;
+        padding: 5px;
+        width: 100%;
+      }
+    }
+
+    .input-button {
+      margin: 25px 0;
+      padding: 10px 15px;
+      background: transparent;
+      border: 1px solid #333;
     }
   }
 

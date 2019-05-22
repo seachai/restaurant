@@ -45,7 +45,7 @@ class OurStory extends Component {
                 "The best Poke in town." - <strong>Chai Lee</strong>
               </div>
               <a
-                href="#ourStory"
+                href="#"
                 className="order-btn"
                 onClick={this.toggleModal}
               >
