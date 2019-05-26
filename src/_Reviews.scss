@@ -96,5 +96,37 @@
   
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+    #Reviews {
+        .container {
+            .row {
+                .col-md-4 {
+                    height: 628px;
+                    h2 {
+                        font-size: 1.7rem;
+                    }
+                }
+
+                .arrows {
+                    position: absolute;
+                    top: 625px;
+                    right: 0px;
+                    padding: 20px;
+
+                    .faArrowLeft, 
+                    .faArrowRight {
+                        font-size: 4rem;
+                        padding: 7px;
+                        color: $paragraphColor;
+                        cursor: pointer;
+                        margin: 0 0 0 100px;
+                    }
+                    .faArrowLeft.ready, 
+                    .faArrowRight.ready {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
 
 }
