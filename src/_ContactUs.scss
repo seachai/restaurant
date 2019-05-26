@@ -48,5 +48,25 @@
             }
         }
     }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    #contactUs {
+        h2 {
+            font-size: 1.7rem;
+        }
+
+        .box {
+            .title {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+  }
+  
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
 
 }

@@ -73,3 +73,16 @@
     }
   }
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  #orderModal {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}

@@ -21,3 +21,48 @@ header {
         }
     }
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    header {
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            .logo {
+                padding: 10px;
+            }
+            .mobile-bar {
+                .fas {
+                    cursor: pointer;
+                    padding: 10px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .menu {
+            display: none;
+        }
+        .mobile-menu {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            transform: translate3d(0,-500px, 0);
+            transition: all .3s ease-in-out;
+            a {
+                padding: 0;
+                margin-top: 25px;
+            }
+
+        }
+
+        .active {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+  }

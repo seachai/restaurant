@@ -9,14 +9,14 @@ class OrderModal extends Component {
             <h1 className="title">Order Online</h1>
             <p>Be the first to know when online ordering is available!</p>
 
-            <div class="input-block">
-              <label for="email" class="input-label">
+            <div className="input-block">
+              <label htmlFor="email" className="input-label">
                 Email
               </label>
               <input type="email" name="email" id="email" placeholder="Email" />
             </div>
 
-            <button class="input-button">Sign Up</button>
+            <button className="input-button">Sign Up</button>
           </div>
           <div className="right-modal">
             <button onClick={this.props.trigger}>

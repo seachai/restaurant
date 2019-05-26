@@ -41,10 +41,10 @@
         }
     }
 
-    .arrows { 
+    .arrows {
         position: absolute;
         top: 550px;
-        right: 250px;
+        right: 15px;
 
         .faArrowLeft, 
         .faArrowRight {
@@ -59,4 +59,42 @@
             color: $black;
         }
     }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    #Reviews {
+
+        .col-md-4 {
+            text-align: center;
+        }
+
+        .title {
+            margin-top: 25px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .arrows {
+            position: absolute;
+            top: 825px;
+            right: 50px;
+            
+            .faArrowLeft, 
+            .faArrowRight {
+                font-size: 3rem;
+                padding: 6px;
+                margin: 50px;
+                color: $paragraphColor;
+                cursor: pointer;
+            }
+        }
+    }
+  }
+  
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
 }
