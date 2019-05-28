@@ -23,9 +23,9 @@ class SpecialMenu extends Component {
           <h5 className="title">Special Menu</h5>
           <h2>Delicious Flavor of Hawaii</h2>
           <div className="row boxes">{this.loopedMenu()}</div>
-          <a href="#SpecialMenu" className="link">
+          {/* <a href="#SpecialMenu" className="link">
             View Full More
-          </a>
+          </a> */}
         </div>
       </section>
     );

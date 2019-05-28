@@ -85,7 +85,7 @@ class Reviews extends Component {
             <div className="row">
               <div className="col-md-8 side-img">
                 <div className="side-img">
-                  <img src="https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/85/121/skd181312sdc.jpg" alt="chef"/>
+                  <img src="https://ih0.redbubble.net/image.322662552.9886/ap,550x550,12x12,1,transparent,t.u2.png" alt="chef"/>
                 </div>
               </div>
               <div className="col-md-4">
