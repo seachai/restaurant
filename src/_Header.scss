@@ -12,13 +12,12 @@ header {
     }
 
     .logo {
-        display: inline-block;
+        display: flex;
     }
     
     nav {
-        display: inline-block;
-        float: right;
-        text-align: right;
+        display: flex;
+        justify-content:flex-end;
 
         a {
             color: #fff;
